@@ -1,0 +1,38 @@
+* {
+    font-family: 'Hachi Maru Pop', cursive;
+}
+
+#heading{
+    font-weight: 100;
+    font-size: 40px;
+}
+
+.main {
+    /* border: 1px solid rgb(187, 172, 172); */
+    margin: 4em auto ;
+    padding: 80px;
+    width: 60%;
+    height: 500px;
+    text-align: center;
+    border-radius: 10px;
+
+    /*box shadow*/
+    box-shadow: -3px 0px 50px 0px rgba(0,0,0,0.34);
+    -webkit-box-shadow: -3px 0px 50px 0px rgba(0,0,0,0.34);
+    -moz-box-shadow: -3px 0px 50px 0px rgba(0,0,0,0.34);
+}
+
+.rps-game {
+    display: flex;
+    margin-top: 8em;
+    justify-content: space-around;
+}
+
+.score {
+    border: 1px solid purple;
+    display: inline;
+    padding:15px;
+    background-color: rebeccapurple;
+    color: white;
+    border-radius: 10px;
+}
