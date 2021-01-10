@@ -47,7 +47,6 @@ function frontEndRPS(humanChoice,botChoice,resultDetail){
         'scissor' : document.getElementById('scissor').src,
     }
 
-
     // console.log(imgDatabase);
     var modelType = document.getElementsByClassName("modal-default");
     var resultMessage, resultDisplay,human = humanChoice,bot = botChoice;
@@ -58,8 +57,8 @@ function frontEndRPS(humanChoice,botChoice,resultDetail){
 
         document.getElementById("color-box").className = "modal-win ";
 
-        resultMessage.innerHTML = "You WON!!";
-        resultDisplay.innerHTML = "<img src='"+imgDatabase[human] + "'height='100px' width='150px' >  VS <img src='"+imgDatabase[bot] + "'height='100px' width='150px' >";
+        resultMessage.innerHTML = "<p style='font-size:50px;'>You WON!!<p style='font-size:50px;'>";
+        resultDisplay.innerHTML = "<img src='"+imgDatabase[human] + "'height='120px' width='150px'><p style='display:inline; font-size:80px;'> VS </p><img src='"+imgDatabase[bot] + "'height='120px' width='150px' >";
 
         scores['humanscore']++;
         humanScore = document.getElementById('human-score');
@@ -73,8 +72,8 @@ function frontEndRPS(humanChoice,botChoice,resultDetail){
 
       document.getElementById("color-box").className = "modal-tie";
 
-      resultMessage.innerHTML = "It's a TIE!..";
-      resultDisplay.innerHTML = "<img src='"+imgDatabase[human] + "'height='100px' width='150px' >  VS <img src='"+imgDatabase[bot] + "'height='100px' width='150px' >";
+      resultMessage.innerHTML = "<p style='font-size:50px;'>It's a TIE!..</p>";
+      resultDisplay.innerHTML = "<img src='"+imgDatabase[human] + "'height='120px' width='150px'><p style='display:inline; font-size:80px;'> VS </p><img src='"+imgDatabase[bot] + "'height='120px' width='150px' >";
       
       // scores['humanscore']++;
       // humanScore = document.getElementById('human-score');
@@ -88,8 +87,8 @@ function frontEndRPS(humanChoice,botChoice,resultDetail){
       
       document.getElementById("color-box").className = "modal-loss";
 
-      resultMessage.innerHTML = "You LOST..!";
-      resultDisplay.innerHTML = "<img src='"+imgDatabase[human] + "'height='100px' width='150px' >  VS <img src='"+imgDatabase[bot] + "'height='100px' width='150px' >";
+      resultMessage.innerHTML = "<p style='font-size:50px;'>You LOST..!</>";
+      resultDisplay.innerHTML = "<img src='"+imgDatabase[human] + "'height='120px' width='150px'><p style='display:inline; font-size:80px;'> VS </p><img src='"+imgDatabase[bot] + "'height='120px' width='150px' >";
       
       scores['botscore']++;
       botScore = document.getElementById('computer-score');
@@ -98,14 +97,6 @@ function frontEndRPS(humanChoice,botChoice,resultDetail){
 
     else{
       //something went wrong
-
-      resultMessage = document.getElementById('result-message');
-      resultDisplay = document.getElementById('result-display');
-      
-      document.getElementById("color-box").className = "modal-default";
-
-      resultMessage.innerHTML = "Something Went Wrong!!";
-      resultDisplay.innerHTML = "🧰​🛠️";
 
     }
 
@@ -148,4 +139,15 @@ function restartGame(){
     botScore = document.getElementById('computer-score');
     botScore.innerHTML = scores['botscore'];
   } 
+}
+
+function aboutDev(){
+  resultMessage = document.getElementById('result-message');
+  resultDisplay = document.getElementById('result-display');
+  
+  document.getElementById("color-box").className = "modal-default";
+
+  resultMessage.innerHTML = "<h1>Hi, I am <span style='font-size: 45px; font-weight: 200;' >Sohail</span></h1><h2>A Designer, Full Stack Developer, AI/ML enthusiast & </h2> <h3>3rd Year Engineering Undergrad Student at University Of Pune (SPPU)</h3>";
+  resultDisplay.innerHTML = "<p style='font-size: 50px;'>📚 🧑🏽‍🎓 💻</p>";
+  frontEndModel();
 }
