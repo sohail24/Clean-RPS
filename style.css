@@ -9,7 +9,7 @@
 
 .main {
     /* border: 1px solid rgb(187, 172, 172); */
-    margin: 4em auto ;
+    margin: 0.8em auto ;
     padding: 80px;
     width: 60%;
     height: 500px;
@@ -24,7 +24,7 @@
 
 .rps-game {
     display: flex;
-    margin-top: 8em;
+    margin-top: 6em;
     justify-content: space-around;
 }
 
@@ -35,4 +35,157 @@
     background-color: rebeccapurple;
     color: white;
     border-radius: 10px;
+}
+
+.rps-game img {
+    transition-duration: 0.5s;
+}
+.rps-game img:hover {
+    cursor: pointer;
+    transition-duration: 0.5s;
+    border-radius: 100px;
+    padding: 50px;
+     /*box shadow*/
+     box-shadow: -3px 0px 50px 0px rgba(0,0,0,0.34);
+     -webkit-box-shadow: -3px 0px 50px 0px rgba(0,0,0,0.34);
+     -moz-box-shadow: -3px 0px 50px 0px rgba(0,0,0,0.34);
+}
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 180px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 50%;
+    height: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-win {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+
+  .modal-loss {
+    padding: 2px 16px;
+    background-color: #b64040;
+    color: white;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+
+  .modal-tie {
+    padding: 2px 16px;
+    background-color: #b6aa40;
+    color: white;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  
+  .modal-default {
+    padding: 2px 16px;
+    background-color: #7740b6;
+    color: white;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+
+  .info{
+    display: flex;
+    justify-content: flex-end;
+  }
+
+.info p {
+  margin-right: 20px;
+  color: white;
+  padding: 10px;
+  background-color:#7740b6 ;
+  border: px solid blueviolet ;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.info p:hover{
+  cursor: pointer;
+  color: white;
+   background-color: black;
+   border-radius: 10px;
+        /*box shadow*/
+        box-shadow: -3px 0px 50px 0px rgba(0,0,0,0.34);
+        -webkit-box-shadow: -3px 0px 50px 0px rgba(0,0,0,0.34);
+        -moz-box-shadow: -3px 0px 50px 0px rgba(0,0,0,0.34);
+        transition: 0.8s;
+}
+
+footer {
+  padding-top: 5px;
+  text-align: center;
 }
