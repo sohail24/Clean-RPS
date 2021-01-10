@@ -5,5 +5,5 @@ No bootstrap, no tailwind or any framework, designed each component independentl
 
 ## concepts learned
 1. `DOM` 
-2. `CSS TRARNSITION` 
+2. `CSS TRANSIITIONS` 
 3. `MODAL` 
