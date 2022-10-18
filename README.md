@@ -1,6 +1,6 @@
 # Clean-RPS
 
-- Cleanest rock paper scissor game u would have ever seen, tried to recreate our childhood game Where i tried to give it elegant touch with clean UI design along scores and fluid transitions of selections.
+- Cleanest rock paper scissor game u would have ever seen, tried to recreate our childhood game where I tried to give it elegant touch with clean UI design along scores and fluid transitions of selections.
 - No Bootstrap, no Tailwind or any Framework, designed each component independently.
 - Only Vanilla Javascript Action.
 
